@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма для заказа</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="order">
+        <h1 class="order-title">Заполните Форму для заказа</h1>
+        <form action="submit.php" class="order__form form" method="post">
+          <label for="userName">Имя</label>
+          <input
+            type="text"
+            placeholder="Напиши своё имя"
+            id="userName"
+            class="form__input--name"
+          />
+          <label for="phoneNumber">Номер телефона</label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            class="form__input--phone"
+            placeholder="Напиши свой номер телефона"
+          />
+          <input type="submit" value="Заказать" class="form__input--submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
